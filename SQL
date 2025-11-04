@@ -9,3 +9,31 @@ CREATE TABLE companies (
     pe_ratio REAL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+import sqlite3
+import yfinance as yf
+
+conn = sqlite3.connect('companies.db')
+cur = conn.cursor()
+
+cur.execute('''CREATE TABLE IF NOT EXISTS companies
+               (id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT,
+                ticker TEXT,
+                sector TEXT,
+                industry TEXT,
+                country TEXT,
+                market_cap REAL,
+                pe_ratio REAL)''')
+
+tickers = ['AAPL', 'MSFT', 'GOOG']
+for t in tickers:
+    data = yf.Ticker(t).info
+    cur.execute('''INSERT INTO companies (name, ticker, sector, industry, country, market_cap, pe_ratio)
+                   VALUES (?, ?, ?, ?, ?, ?, ?)''',
+                (data.get('shortName'), t, data.get('sector'), data.get('industry'),
+                 data.get('country'), data.get('marketCap'), data.get('trailingPE')))
+
+conn.commit()
+conn.close()
+
