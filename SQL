@@ -1,0 +1,11 @@
+CREATE TABLE companies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    ticker TEXT,
+    sector TEXT,
+    industry TEXT,
+    country TEXT,
+    market_cap REAL,
+    pe_ratio REAL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
