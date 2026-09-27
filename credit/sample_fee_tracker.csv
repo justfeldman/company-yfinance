@@ -1,0 +1,18 @@
+fee_id,deal,lender,fee_type,commitment,drawn,rate_bps,flat_amount,start_date,end_date,day_count,lender_share_pct,amount_entered,source_doc
+F001,Acme Holdings RCF,Bank A,unused,50000000,20000000,37.5,,2026-01-01,2026-04-01,ACT/360,40,11250.00,Agent notice 2026-04-02
+F002,Acme Holdings RCF,Bank B,unused,50000000,20000000,37.5,,2026-01-01,2026-04-01,ACT/360,35,984375.00,Agent notice 2026-04-02
+F003,Acme Holdings RCF,Bank C,unused,50000000,20000000,37.5,,2026-01-01,2026-04-01,ACT/360,25,11718.75,Agent notice 2026-04-02
+F004,Beacon Industries TLB,Bank A,upfront,200000000,,100,,2026-02-15,2026-02-15,ACT/360,12.5,250000.00,Fee letter
+F005,Beacon Industries TLB,Bank D,upfront,200000000,,100,,2026-02-15,2026-02-15,ACT/360,12.5,2000000.00,Fee letter
+F006,Beacon Industries TLB,Bank E,upfront,200000000,,100,,2026-02-15,2026-02-15,ACT/360,75,1500000.00,Fee letter
+F007,Beacon Industries TLB,Bank A,interest,,200000000,930,,2026-01-01,2026-04-01,ACT/360,12.5,573287.67,Rate set notice
+F008,Harbor Logistics RCF,Bank A,lc,,5000000,300,,2026-01-01,2026-04-02,ACT/360,100,37916.67,LC fee notice
+F009,Harbor Logistics RCF,Bank A,lc,,5000000,12.5,,2026-01-01,2026-04-02,ACT/360,100,1597.86,Fronting fee notice
+F010,Harbor Logistics RCF,Bank A,agency,,,,50000,2026-01-01,2026-04-01,ACT/360,100,12500.00,Agency fee letter
+F011,Harbor Logistics RCF,Bank A,agency,,,,50000,2026-01-01,2026-04-01,ACT/360,100,12500.00,Agency fee letter
+F012,Delta Foods DDTL,Bank B,ticking,75000000,0,50,,2026-01-01,2026-04-01,ACT/360,100,94791.67,Ticking fee notice
+F013,Delta Foods RCF,Bank B,unused,30000000,10000000,25,,2026-04-01,2026-01-01,ACT/360,100,12500.00,Agent notice
+F014,Delta Foods RCF,Bank C,upfront,30000000,,,,2026-01-10,2026-01-10,ACT/360,100,150000.00,Fee letter
+F015,Echo Health TL,Bank A,amendment,25000000,,25,,2026-03-01,2026-03-01,ACT/360,100,62500.00,Consent solicitation
+F016,Echo Health TL,Bank A,prepayment,,10000000,200,,2026-03-20,2026-03-20,ACT/360,100,200000.00,Prepayment notice
+F017,Echo Health TL,Bank A,unused,40000000,15000000,50,,2026-01-01,2026-04-01,ACT/360,100,33125.00,Agent notice
